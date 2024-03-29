@@ -1,0 +1,322 @@
+{
+  "openapi": "3.0.1",
+  "info": {
+    "title": "DakSam eKYC API Documentation",
+    "description": "Welcome to the DakSam eKYC API documentation. This document provides instructions on how to use the API for Know Your Customer (eKYC) processes. Please follow the guidelines below to integrate our API into your application seamlessly.",
+    "version": "1.0.0"
+  },
+  "servers": [
+    {
+      "url": "https://api.daksamai.com/kyc-api/v1.0/"
+    }
+  ],
+
+  "paths": {
+    "/kyc-api/v1.0/authenticate": {
+      "post": {
+        "summary": "Authenticate API",
+        "description": "Authenticate using your API key and secret to get an access token.",
+        "requestBody": {
+          "required": true,
+          "content": {
+            "application/json": {
+              "schema": {
+                "type": "object",
+                "properties": {
+                  "api_key": {
+                    "type": "string"
+                  },
+                  "api_secret": {
+                    "type": "string"
+                  }
+                },
+                "required": ["api_key", "api_secret"]
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "Successful authentication",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "object",
+                  "properties": {
+                    "access_token": {
+                      "type": "string"
+                    }
+                  }
+                }
+              }
+            }
+          },
+          "400": {
+            "description": "Bad request",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "object",
+                  "properties": {
+                    "message": {
+                      "type": "string"
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/kyc-api/v1.0/kyc/validate-kyc-photo": {
+      "post": {
+        "summary": "Validate KYC Photo API",
+        "description": "Validate KYC photo using the provided URL of the photo image.",
+        "requestBody": {
+          "required": true,
+          "content": {
+            "application/json": {
+              "schema": {
+                "type": "object",
+                "properties": {
+                  "photo_url": {
+                    "type": "string"
+                  }
+                },
+                "required": ["photo_url"]
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "Successful validation",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "object",
+                  "properties": {
+                    "message": {
+                      "type": "string"
+                    }
+                  }
+                }
+              }
+            }
+          },
+          "400": {
+            "description": "Bad request",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "object",
+                  "properties": {
+                    "message": {
+                      "type": "string"
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/kyc-api/v1.0/kyc/validate-kyc-id": {
+      "post": {
+        "summary": "Validate KYC ID API",
+        "description": "Validate KYC ID document using the provided URL of the ID document image.",
+        "requestBody": {
+          "required": true,
+          "content": {
+            "application/json": {
+              "schema": {
+                "type": "object",
+                "properties": {
+                  "id_url": {
+                    "type": "string"
+                  }
+                },
+                "required": ["id_url"]
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "Successful validation",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "object",
+                  "properties": {
+                    "message": {
+                      "type": "string"
+                    }
+                  }
+                }
+              }
+            }
+          },
+          "400": {
+            "description": "Bad request",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "object",
+                  "properties": {
+                    "message": {
+                      "type": "string"
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/kyc-api/v1.0/kyc/documents-verification": {
+      "post": {
+        "summary": "Documents Verification API",
+        "description": "Verify KYC documents using the provided URLs of the photo image and ID document image.",
+        "requestBody": {
+          "required": true,
+          "content": {
+            "application/json": {
+              "schema": {
+                "type": "object",
+                "properties": {
+                  "photo_url": {
+                    "type": "string"
+                  },
+                  "id_url": {
+                    "type": "string"
+                  }
+                },
+                "required": ["photo_url", "id_url"]
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "Successful verification",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "object",
+                  "properties": {
+                    "message": {
+                      "type": "string"
+                    }
+                  }
+                }
+              }
+            }
+          },
+          "400": {
+            "description": "Bad request",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "object",
+                  "properties": {
+                    "message": {
+                      "type": "string"
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/kyc-api/v1.0/kyc/send-otp": {
+      "post": {
+        "summary": "Send OTP API",
+        "description": "Send OTP for additional verification using the provided URL of the ID document image and log ID received in validate KYC ID request.",
+        "requestBody": {
+          "required": true,
+          "content": {
+            "application/json": {
+              "schema": {
+                "type": "object",
+                "properties": {
+                  "id_url": {
+                    "type": "string"
+                  },
+                  "log_id": {
+                    "type": "string"
+                  }
+                },
+                "required": ["id_url", "log_id"]
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "OTP sent successfully",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "object",
+                  "properties": {
+                    "message": {
+                      "type": "string"
+                    }
+                  }
+                }
+              }
+            }
+          },
+          "400": {
+            "description": "Bad request",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "object",
+                  "properties": {
+                    "message": {
+                      "type": "string"
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  },
+  "components": {
+    "securitySchemes": {
+      "APIKeyAuth": {
+        "type": "apiKey",
+        "in": "header",
+        "name": "x-api-key"
+      },
+      "APISecretAuth": {
+        "type": "apiKey",
+        "in": "header",
+        "name": "x-api-secret"
+      },
+      "BearerAuth": {
+        "type": "apiKey",
+        "in": "header",
+        "name": "Authorization"
+      }
+    }
+  },
+
+  "security": [
+    {
+      "APIKeyAuth": [],
+      "APISecretAuth": [],
+      "BearerAuth": []
+    }
+  ]
+}
