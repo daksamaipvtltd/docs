@@ -50,45 +50,29 @@
     {
       "group": "Authentication",
       "pages": [
-        "api-reference/endpoint/create"
+        "api-reference/endpoint/authenticate"
       ]
     },
     {
-      "group": "KYC Verification",
+      "group": "Validate Photo & ID",
       "pages": [
-        "api-reference/endpoint/create",
-        "api-reference/endpoint/create"
+        "api-reference/endpoint/validate-kyc-photo",
+        "api-reference/endpoint/validate-kyc-id"
       ]
     },
-    
-    
     {
       "group": "Documents Verification",
       "pages": [
-        "api-reference/endpoint/create"
+        "api-reference/endpoint/documents-verification"
       ]
     },
     
     {
-      "group": "API Documentation",
+      "group": "ValidateOTP",
       "pages": [
         "api-reference/endpoint/send-otp",
-        "api-reference/endpoint/create"
       ]
     },
-    {
-      "group": "API Documentation",
-      "pages": [
-        "api-reference/endpoint/create"
-      ]
-    },
-    {
-      "group": "API Documentation",
-      "pages": [
-        "api-reference/endpoint/create"
-      ]
-    }
-    
   ],
   "footerSocials": {
     "twitter": "https://twitter.com/DakSamAI",
