@@ -48,13 +48,47 @@
       ]
     },
     {
-      "group": "Endpoint Examples",
+      "group": "Authentication",
       "pages": [
-        "api-reference/endpoint/get",
-        "api-reference/endpoint/create",
-        "api-reference/endpoint/delete"
+        "api-reference/endpoint/authenticate"
+      ]
+    },
+    {
+      "group": "KYC Verification",
+      "pages": [
+        "api-reference/endpoint/validate-kyc-photo",
+        "api-reference/endpoint/validate-kyc-id"
+      ]
+    },
+    
+    
+    {
+      "group": "Documents Verification",
+      "pages": [
+        "api-reference/endpoint/documents-verification"
+      ]
+    },
+    
+    {
+      "group": "Send & Check OTP",
+      "pages": [
+        "api-reference/endpoint/send-otp",
+        "api-reference/endpoint/verify-otp"
+      ]
+    },
+    {
+      "group": "KYC Logs",
+      "pages": [
+        "api-reference/endpoint/logs"
+      ]
+    },
+    {
+      "group": "KYC Usage",
+      "pages": [
+        "api-reference/endpoint/usage"
       ]
     }
+    
   ],
   "footerSocials": {
     "twitter": "https://twitter.com/DakSamAI",
