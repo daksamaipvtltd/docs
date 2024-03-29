@@ -7,7 +7,7 @@
   },
   "servers": [
     {
-      "url": "https://api.daksamai.com/kyc-api/v1.0/"
+      "url": "https://api.daksamai.com"
     }
   ],
 
