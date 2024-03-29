@@ -48,13 +48,13 @@
       ]
     },
     {
-      "group": "Authentication",
+      "group": "API Documentation",
       "pages": [
         "api-reference/endpoint/authenticate"
       ]
     },
     {
-      "group": "KYC Verification",
+      "group": "API Documentation",
       "pages": [
         "api-reference/endpoint/validate-kyc-photo",
         "api-reference/endpoint/validate-kyc-id"
@@ -63,27 +63,27 @@
     
     
     {
-      "group": "Documents Verification",
+      "group": "API Documentation",
       "pages": [
         "api-reference/endpoint/documents-verification"
       ]
     },
     
     {
-      "group": "Send & Check OTP",
+      "group": "API Documentation",
       "pages": [
         "api-reference/endpoint/send-otp",
         "api-reference/endpoint/verify-otp"
       ]
     },
     {
-      "group": "KYC Logs",
+      "group": "API Documentation",
       "pages": [
         "api-reference/endpoint/logs"
       ]
     },
     {
-      "group": "KYC Usage",
+      "group": "API Documentation",
       "pages": [
         "api-reference/endpoint/usage"
       ]
