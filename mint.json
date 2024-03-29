@@ -48,13 +48,13 @@
       ]
     },
     {
-      "group": "API Documentation",
+      "group": "Authentication",
       "pages": [
         "api-reference/endpoint/create"
       ]
     },
     {
-      "group": "API Documentation",
+      "group": "KYC Verification",
       "pages": [
         "api-reference/endpoint/create",
         "api-reference/endpoint/create"
@@ -63,7 +63,7 @@
     
     
     {
-      "group": "API Documentation",
+      "group": "Documents Verification",
       "pages": [
         "api-reference/endpoint/create"
       ]
