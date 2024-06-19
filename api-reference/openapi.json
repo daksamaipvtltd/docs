@@ -7,7 +7,7 @@
   },
   "servers": [
     {
-      "url": "https://api.daksamai.com"
+      "url": "https://api.ekyc.daksam.ai"
     }
   ],
 
