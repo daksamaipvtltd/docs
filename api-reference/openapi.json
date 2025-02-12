@@ -234,10 +234,10 @@
         }
       }
     },
-    "/kyc-api/v1.0/kyc/send-otp": {
+    "/kyc-api/v1.0/kyc/logs": {
       "post": {
-        "summary": "Send OTP API",
-        "description": "Send OTP for additional verification using the provided URL of the ID document image and log ID received in validate KYC ID request.",
+        "summary": "View Logs",
+        "description": "View Log History.",
         "requestBody": {
           "required": true,
           "content": {
@@ -259,7 +259,7 @@
         },
         "responses": {
           "200": {
-            "description": "OTP sent successfully",
+            "description": "Success",
             "content": {
               "application/json": {
                 "schema": {
