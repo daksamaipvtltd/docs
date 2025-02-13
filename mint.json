@@ -57,22 +57,17 @@
       "group": "Validate Photo & ID",
       "pages": [
         "api-reference/endpoint/validate-kyc-photo",
-        "api-reference/endpoint/validate-kyc-id"
+        "api-reference/endpoint/validate-kyc-id",
+    		"api-reference/endpoint/validate-pan-card",
+    		"api-reference/endpoint/validate-aadhaar-card",
+    		"api-reference/endpoint/validate-driving-licence",
+    		"api-reference/endpoint/validate-passport",
+    		"api-reference/endpoint/validate-address-proof"
       ]
     },
-    {
-      "group": "Documents Verification",
-      "pages": [
-        "api-reference/endpoint/documents-verification"
-      ]
-    },
+
     
-    {
-      "group": "ValidateOTP",
-      "pages": [
-        "api-reference/endpoint/send-otp"
-      ]
-    }
+
   ],
   "footerSocials": {
     "twitter": "https://twitter.com/DakSamAI",
