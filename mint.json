@@ -53,6 +53,17 @@
         "api-reference/endpoint/authenticate"
       ]
     },
+
+    {
+      "group": "Applicants Identity Verification",
+      "pages": [
+        "api-reference/endpoint/add-applicant",
+        "api-reference/endpoint/get-applicant-details",
+        "api-reference/endpoint/get-applicant-logs",
+        "api-reference/endpoint/validate-applicant-id-document",
+        "api-reference/endpoint/validate-applicant-documents"
+      ]
+    },
     {
       "group": "Validate Photo & ID",
       "pages": [
