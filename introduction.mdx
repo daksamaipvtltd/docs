@@ -32,3 +32,36 @@ In the Developer Space, you'll find your API key.
 Copy your API key and securely store it for use in your integration.
 With your API key in hand, you're now ready to integrate the eKYC API into your application and start verifying your users with ease.
 
+## Setting Web SDK
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>MyApp WebSDK Example</title>
+</head>
+
+<body>
+    <script src="https://api.ekyc.daksam.ai/websdk/sdk-builder.js"></script>
+    <div id="myapp-websdk-container"></div>
+    <script>
+        const sdkInfo = {
+            containerId: '#myapp-websdk-container',
+			apiKey: 'api_key_xxxxxxxxx',
+        };
+
+		const applicantInfo = {
+			applicantFirstName: 'add firstname',
+			applicantLastName: 'add lastname',
+			applicantEmail: 'add email',
+			applicantPhone: '+1234567890'
+		};
+		initVerification(sdkInfo, applicantInfo, null);
+    </script>
+</body>
+
+</html>
+
+
+
