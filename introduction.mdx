@@ -34,34 +34,30 @@ With your API key in hand, you're now ready to integrate the eKYC API into your 
 
 ## Setting Web SDK
 
-<!DOCTYPE html>
-<html lang="en">
 
-<head>
-    <meta charset="UTF-8">
-    <title>MyApp WebSDK Example</title>
-</head>
+To integrate the Web SDK, add the following snippet to your application:
 
-<body>
-    <script src="https://api.ekyc.daksam.ai/websdk/sdk-builder.js"></script>
-    <div id="myapp-websdk-container"></div>
-    <script>
-        const sdkInfo = {
-            containerId: '#myapp-websdk-container',
-			apiKey: 'api_key_xxxxxxxxx',
-        };
+```html
+<!-- Include SDK -->
+<script src="https://api.ekyc.daksam.ai/websdk/sdk-builder.js"></script>
 
-		const applicantInfo = {
-			applicantFirstName: 'add firstname',
-			applicantLastName: 'add lastname',
-			applicantEmail: 'add email',
-			applicantPhone: '+1234567890'
-		};
-		initVerification(sdkInfo, applicantInfo, null);
-    </script>
-</body>
+<!-- Container for WebSDK -->
+<div id="myapp-websdk-container"></div>
 
-</html>
+<script>
+  const sdkInfo = {
+    containerId: '#myapp-websdk-container',
+    apiKey: 'api_key_xxxxxxxxx',
+  };
 
+  const applicantInfo = {
+    applicantFirstName: 'add firstname',
+    applicantLastName: 'add lastname',
+    applicantEmail: 'add email',
+    applicantPhone: '+1234567890',
+  };
+
+  initVerification(sdkInfo, applicantInfo, null);
+</script>
 
 
